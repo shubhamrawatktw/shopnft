@@ -92,7 +92,7 @@ h3,
 h4,
 h5 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
@@ -145,10 +145,10 @@ p {
 
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 .section-center {
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
   max-width: var(--max-width);
 }
@@ -158,6 +158,9 @@ p {
   text-align: center;
 }
 
+.b{
+  border: 1px solid black;
+}
 
 
 .btn {

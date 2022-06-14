@@ -33,8 +33,12 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid black;
-    padding: 0.5rem 0rem;
+    /* border: 1px solid black; */
+    /* padding: 0.8rem 0rem; */
+    box-shadow: var(--light-shadow);
+    /* position: fixed; */
+    width: 100vw;
+    height: 10vh;
 
 .logo{
     font-size: 1.3rem;
