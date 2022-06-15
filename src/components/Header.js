@@ -36,7 +36,7 @@ const Wrapper = styled.div`
     /* border: 1px solid black; */
     /* padding: 0.8rem 0rem; */
     box-shadow: var(--light-shadow);
-     /* position: fixed; */
+    
      
 
     width: 100vw;

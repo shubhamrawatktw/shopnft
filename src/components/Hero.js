@@ -9,8 +9,8 @@ import { RiAuctionLine } from "react-icons/ri";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 
 const Hero = () => {
-  const [showIcon1,setShowIcon1] = useState(false)
-  const [showIcon2,setShowIcon2] = useState(false)
+  const [showIcon1, setShowIcon1] = useState(false);
+  const [showIcon2, setShowIcon2] = useState(false);
   return (
     <Wrapper>
       <section className="section section-center ">
@@ -21,15 +21,29 @@ const Hero = () => {
             Buy sell & auction viral videos as NFTs from your favourite creators
           </p>
           <div className="hero-btns">
-            <button className="hero-btn-1" onMouseOver={()=>setShowIcon1(true)} onMouseLeave={()=>setShowIcon1(false)}>
+            <button
+              className="hero-btn-1"
+              onMouseOver={() => setShowIcon1(true)}
+              onMouseLeave={() => setShowIcon1(false)}
+            >
               Auction
-              <span className={showIcon1 ? "" : "hero-btn-icon1"} style={{marginLeft:"8px"}}>
+              <span
+                className={showIcon1 ? "" : "hero-btn-icon1"}
+                style={{ marginLeft: "8px" }}
+              >
                 <RiAuctionLine />
               </span>
             </button>
-            <button className="hero-btn-2" onMouseOver={()=>setShowIcon2(true)} onMouseLeave={()=>setShowIcon2(false)}>
+            <button
+              className="hero-btn-2"
+              onMouseOver={() => setShowIcon2(true)}
+              onMouseLeave={() => setShowIcon2(false)}
+            >
               Marketplace
-              <span className={showIcon2 ? "" : "hero-btn-icon2"} style={{marginLeft:"8px"}}>
+              <span
+                className={showIcon2 ? "" : "hero-btn-icon2"}
+                style={{ marginLeft: "8px" }}
+              >
                 <HiOutlineSpeakerphone />
               </span>
             </button>
@@ -90,19 +104,17 @@ const Hero = () => {
 export default Hero;
 
 const Wrapper = styled.section`
-  height: 90vh;
-  color: var(--clr-black);
-  background-image: linear-gradient(142deg, #ee4d6c, #fbfbfb 9%);
   /* overflow-y: hidden; */
   /* margin-top: 5rem; */
   /* padding-top: 5rem; */
+  height: 90vh;
+  color: var(--clr-black);
+  background-image: linear-gradient(142deg, #ee4d6c, #fbfbfb 9%);
   .section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    
-    
   }
   /* left  */
   .left {
@@ -120,7 +132,8 @@ const Wrapper = styled.section`
       border-color: #ee4d6c;
       color: grey;
       transition: var(--transition);
-    
+      cursor: pointer;
+
       &:hover {
         background-image: linear-gradient(
           45deg,
@@ -129,7 +142,6 @@ const Wrapper = styled.section`
         );
         color: #ffffff;
       }
-    
     }
     .hero-btn-2 {
       padding: 0.5rem 1.5rem;
@@ -137,7 +149,8 @@ const Wrapper = styled.section`
       border-color: #ee4d6c;
       color: grey;
       transition: var(--transition);
-    
+      cursor: pointer;
+
       &:hover {
         background-image: linear-gradient(
           45deg,
@@ -146,16 +159,14 @@ const Wrapper = styled.section`
         );
         color: #ffffff;
       }
-      
     }
   }
   .hero-btn-icon1 {
-        visibility: hidden;
-        
-      }
+    visibility: hidden;
+  }
   .hero-btn-icon2 {
-        visibility: hidden;
-      }
+    visibility: hidden;
+  }
   /* right  */
   .right {
     padding: 2rem 3rem;
@@ -223,6 +234,8 @@ const Wrapper = styled.section`
       font-size: 1.2rem;
       background-color: #ffffff;
       border-color: #ee4d6c;
+      cursor: pointer;
+
       clip-path: polygon(0% 0, 70% 0, 100% 100%, 0% 100%);
     }
     .btn-right {
@@ -234,6 +247,8 @@ const Wrapper = styled.section`
       font-size: 1.2rem;
       background-color: #ffffff;
       border-color: #ee4d6c;
+      cursor: pointer;
+
       clip-path: polygon(29% 0, 100% 0, 100% 100%, 0% 100%);
     }
   }
