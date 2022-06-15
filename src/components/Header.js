@@ -36,9 +36,12 @@ const Wrapper = styled.div`
     /* border: 1px solid black; */
     /* padding: 0.8rem 0rem; */
     box-shadow: var(--light-shadow);
-    /* position: fixed; */
+     /* position: fixed; */
+     
+
     width: 100vw;
     height: 10vh;
+    /* z-index: 30; */
 
 .logo{
     font-size: 1.3rem;
